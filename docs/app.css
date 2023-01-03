@@ -1,0 +1,51 @@
+:root {
+	--anakiwa: #9cdcfe;
+	--asparagus: #6a9955;
+	--astronaut: #264f78;
+	--beeswax: #fdf4bf;
+	--black-cc: #000000cc;
+	--firefly: #0a1526;
+	--bouquet: #b67bb1;
+	--chambray: #3b5998;
+	--chambray80: #3b599880;
+	--chambray50: #3b599850;
+	--chambray20: #3b599820;
+	--chestnut-rose: #d16969;
+	--cloudy: #afaead;
+	--cod-gray: #1e1e1e;
+	--curious-blue: #1a9fdb;
+	--dotger-blue: #2ca5ff;
+	--gold: #ffd700;
+	--havelock-blue: #569cd6;
+	--laser: #cbba66;
+	--mariner: #3178c6;
+	--puerto-rico: #4ec9b0;
+	--raw-sienna: #ce9178;
+}
+@font-face {
+	src: url("./fonts/NotoSans-Medium.woff2") format("woff2");
+	font-family: "Noto Sans";
+	font-display: swap;
+}
+@font-face {
+	src: url("./fonts/NotoSans-Black.woff2") format("woff2");
+	font-weight: bold;
+	font-family: "Noto Sans";
+	font-display: swap;
+}
+@font-face {
+	src: url("./fonts/NotoSans-Medium.subset.woff2") format("woff2");
+	font-family: "Noto Sans.ss";
+	font-display: swap;
+}
+@font-face {
+	src: url("./fonts/NotoSans-Black.subset.woff2") format("woff2");
+	font-weight: bold;
+	font-family: "Noto Sans.ss"2;
+	font-display: swap;
+}
+body {
+	font-family: "Noto Sans.ss", "Noto Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
