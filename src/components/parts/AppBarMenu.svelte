@@ -23,9 +23,8 @@ onDestroy(() => {
 
 <div class="z=10 relative">
 	<button class="z=1 relative w=2.5 h=2.25 @sm@none"
-		aria-label="hamburger"
-		on:click={handleClick}
-	>
+			aria-label="hamburger"
+			on:click={handleClick}>
 		<div class="absolute w=100% h=.25 bg=#000 @dark@bg=#fff t=0 tt=.4s{$modal$ ? " tf=translateY(1em)_rotate(-45deg)" : ""}"></div>
 		<div class="absolute h=.25 bg=#000 @dark@bg=#fff t=1 tt=.4s_linear l={$modal$ ? "3 r=-3 op=0" : "0 r=0"}"></div>
 		<div class="absolute w=100% h=.25 bg=#000 @dark@bg=#fff b=0 tt=.4s{$modal$ ? " tf=translateY(-1em)_rotate(45deg)" : ""}"></div>

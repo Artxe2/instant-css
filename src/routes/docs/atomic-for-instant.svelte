@@ -5,7 +5,7 @@ import H5 from "src/components/cells/texts/H5.svelte"
 import Html from "src/components/cells/texts/Html.svelte"
 import IdeFolder from "src/components/cells/texts/IdeFolder.svelte"
 import IdeSvelte from "src/components/cells/texts/IdeSvelte.svelte"
-    import IdeTypescript from "src/components/cells/texts/IdeTypescript.svelte";
+import IdeTypescript from "src/components/cells/texts/IdeTypescript.svelte"
 import TabSpace from "src/components/cells/texts/TabSpace.svelte"
 import GithubStars from "src/components/organs/docs/GithubStars.svelte"
 </script>

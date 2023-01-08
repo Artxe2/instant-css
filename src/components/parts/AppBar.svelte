@@ -1,7 +1,7 @@
 <script lang="ts">
 import { base } from "$app/paths"
 import { scroll$ } from "src/components/parts/store"
-import MorphingText from "src/components/cells/animations/MorphingText.svelte"
+import MorphingText from "src/components/organs/animations/MorphingText.svelte"
 import AppBarMenu from "src/components/parts/AppBarMenu.svelte"
 
 let class1 = "bg=#3b599825 c=#00000050 @dark@c=#ffffff50 bs=0_.5_.5_#3b599850 :hover/bg=#3b5998aa :hover/c=#000 :hover/bs=0_.5_.5_#3b5998 @dark@:hover/c=#fff"

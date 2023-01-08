@@ -78,6 +78,7 @@ const useActive = (e: HTMLAnchorElement) => {
 					title="Components"
 					list={[
 						{ href: base + "/ui/carousel-slider", text: "Carousel Slider" },
+						{ href: base + "/ui/drag-and-drop", text: "Drag and Drop" },
 						{ href: base + "/ui/infinite-scroll", text: "Infinite Scroll" }
 					]}
 				/>

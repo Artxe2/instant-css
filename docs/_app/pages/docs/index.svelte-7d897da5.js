@@ -1,1 +1,0 @@
-import{S as t,i as a,s as o}from"../../chunks/vendor-89b7d8fb.js";import{b as e}from"../../chunks/paths-4b3c6e7e.js";async function i(){return{status:302,redirect:e+"/docs/installation"}}class u extends t{constructor(s){super();a(this,s,null,null,o,{})}}export{u as default,i as load};

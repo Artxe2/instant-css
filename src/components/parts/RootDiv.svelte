@@ -11,7 +11,7 @@ const handleScroll = (event: UIEvent) => {
     window.history.replaceState({
 		scrollPosition: (event.target as HTMLDivElement).scrollTop
 		, "sveltekit:index": window.history.state["sveltekit:index"]
-	}, "");
+	}, "")
 }
 afterUpdate(() => {
 	container.scrollTop = window.history.state.scrollPosition
@@ -21,7 +21,9 @@ onDestroy(() => {
 })
 </script>
 
-<div bind:this={container} on:scroll={handleScroll} class="h=100% ox=hidden c=#000 @dark@c=#fff {Style.scrollbar.primary}">
+<div bind:this={container}
+		class="h=100% ox=hidden c=#000 @dark@c=#fff {Style.scrollbar.primary}"
+		on:scroll={handleScroll}>
 	<ModalBackground />
 	<slot></slot>
 </div>

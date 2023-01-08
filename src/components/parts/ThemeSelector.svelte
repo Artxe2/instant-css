@@ -24,16 +24,13 @@ onMount(() => {
 	<div class="relative h=2.5 top=0 o=hidden br=.25 fw=normal :hover/tt=.5s :hover/h=8.5">
 		<div class="absolute flex column r=0 t=0 :hover/tt=top_.5s {$theme$ ? $theme$ === "LIGHT" ? "" : ":not(:hover)/t=-3" : ":not(:hover)/t=-6"}">
 			<button class="{$theme$ === "LIGHT" ? css2 : css1}"
-				on:click={() => setTheme("LIGHT")}
-			><code>LIGHT</code></button>
+					on:click={() => setTheme("LIGHT")}><code>LIGHT</code></button>
 			<div class="h=.5"></div>
 			<button class="{$theme$ === "DARK" ? css2 : css1}"
-				on:click={() => setTheme("DARK")}
-			><code>DARK</code></button>
+					on:click={() => setTheme("DARK")}><code>DARK</code></button>
 			<div class="h=.5"></div>
 			<button class="{$theme$ ? css1 : css2}"
-				on:click={resetTheme}
-			><code>SYSTEM</code></button>
+					on:click={resetTheme}><code>SYSTEM</code></button>
 		</div>
 	</div>
 

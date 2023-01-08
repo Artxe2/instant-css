@@ -25,7 +25,7 @@ const next = async () => {
 	class2 = ""
 	class3 = ""
 	class4 = ""
-	await sleep(2000);
+	await sleep(2000)
 	index++
 	(async () => {
 		for (let i = 0; i < text1.length; i++) {

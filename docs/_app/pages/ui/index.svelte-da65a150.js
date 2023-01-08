@@ -1,0 +1,1 @@
+import{S as t,i as e,s as a}from"../../chunks/vendor-ce679c2e.js";import{b as r}from"../../chunks/paths-4b3c6e7e.js";async function l(){return{status:302,redirect:r+"/ui/carousel-slider"}}class u extends t{constructor(s){super();e(this,s,null,null,a,{})}}export{u as default,l as load};

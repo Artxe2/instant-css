@@ -487,33 +487,30 @@ table{border-collapse:collapse;border-spacing:0}
 		for (let e of target.getElementsByTagName('*')) e.classList.forEach(c => classes.add(c))
 	}
 
-	dom.addEventListener("readystatechange",
-		() => {
-			colectClassList(dom.body)
-			buildStyleSheet()
-			let elements = new Set()
-			new MutationObserver(mrList => {
-				let size = classes.size
-				mrList.forEach(mr => {
-					let target = mr.target
-					if (elements.has(target)) return
-					for (let e of elements) {
-						let compare = target.compareDocumentPosition(e)
-						if (!compare || compare & 8) return
-						if (compare & 16) elements.delete(e)
-					}
-					elements.add(target)
-				})
-				for (let e of elements) colectClassList(e)
-				elements.clear()
-				classes.size != size && buildStyleSheet()
-			}).observe(dom.body, {
-				attributeFilter: ["class"],
-				childList: 1,
-				subtree: 1,
+	dom.addEventListener("readystatechange", () => {
+		colectClassList(dom.body)
+		buildStyleSheet()
+		let elements = new Set()
+		new MutationObserver(mrList => {
+			let size = classes.size
+			mrList.forEach(mr => {
+				let target = mr.target
+				if (elements.has(target)) return
+				for (let e of elements) {
+					let compare = target.compareDocumentPosition(e)
+					if (!compare || compare & 8) return
+					if (compare & 16) elements.delete(e)
+				}
+				elements.add(target)
 			})
-		},
-		{ once: 1 }
-	)
+			for (let e of elements) colectClassList(e)
+			elements.clear()
+			classes.size != size && buildStyleSheet()
+		}).observe(dom.body, {
+			attributeFilter: ["class"],
+			childList: 1,
+			subtree: 1,
+		})
+	}, { once: 1 })
 	window.instantCss = () => buildStyleSheet()
 })()

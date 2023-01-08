@@ -1,6 +1,6 @@
 <script lang="ts">
 import CodePage from "src/components/cells/boxs/CodePage.svelte"
-    import Comment from "src/components/cells/texts/Comment.svelte";
+import Comment from "src/components/cells/texts/Comment.svelte"
 import H5 from "src/components/cells/texts/H5.svelte"
 </script>
 
